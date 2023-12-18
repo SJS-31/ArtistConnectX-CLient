@@ -4,12 +4,13 @@ import Card from './card';
 import img from '../../logo.svg'
 import creatordata from '../../Components/creatordata'
 import Header from './banner'
-import Leaderboard from '../Community/Leaderboard'
+import Navbar from '../../Components/Navbar'
+
 const App = () => {
   return (
     <>
+    <Navbar/>
     <Header/>
-    <Leaderboard/>
     <div className="flex flex-wrap justify-center">
       
       {/* Render three cards with different names */}

@@ -1,9 +1,8 @@
 import React from "react";
 import { Route, Router, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Navbar from "./Components/Navbar";
 import Community from "./Pages/Community/Community";
-
+import Profile from './Pages/Profile/Dashboard'
 
 
 const App = () => {
@@ -12,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="Community" element={<Community />} />
+        <Route path="Profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
